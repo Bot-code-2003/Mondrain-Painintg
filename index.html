@@ -66,15 +66,53 @@
         background-color: purple;
         font-size: medium;
       }
-      h1 {
+      h1,h2 {
         color: white;
+      }
+
+      @media (max-width: 400px) {
+        .container {
+          height: auto;
+          width: 100%;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(18, 1fr);
+        }
+        .item {
+          font-size: medium;
+          font-weight: 400;
+          padding: 5px;
+        }
+        .red {
+          background-color: #e72f24;
+        }
+        .white1,
+        .white2,
+        .white3,
+        .blue,
+        .white4,
+        .purple,
+        .yellow,
+        .black {
+          grid-column: auto;
+          grid-row: auto;
+          font-size: medium;
+          font-weight: 400;
+          padding: 5px;
+        }
+        h1 {
+          font-size: 24px;
+        }
+        h2{
+          font-size: 24px;
+        }
       }
     </style>
   </head>
 
   <body>
     <!-- Write your HTML here -->
-    <h1>Mondrain painting done in CSS</h1>
+    <h1>Mondrian painting done in CSS</h1>
+    <h2>!Toggle Desktop view if using Mobile!</h2>
     <div class="container">
       <div class="item red">RED</div>
       <div class="item white1">White1</div>
