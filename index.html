@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        flex-direction: column;
+      }
+      .container {
+        height: 748px;
+        width: 748px;
+        display: grid;
+        background-color: rgb(58, 58, 58);
+        padding: 20px;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 22px;
+        gap: 9px;
+      }
+      .item {
+        background-color: rgb(234, 234, 234);
+        font-size: xx-large;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .red {
+        background-color: #e72f24;
+      }
+      .white1 {
+        grid-column: span 3;
+      }
+      .white2 {
+        grid-row: span 2;
+      }
+      .white3 {
+        grid-row: span 2;
+        grid-column: span 2;
+      }
+      .blue {
+        background-color: blue;
+        font-size: medium;
+      }
+      .white4 {
+        grid-row: span 2;
+        font-size: medium;
+        font-weight: 500;
+      }
+      .yellow {
+        background-color: yellow;
+        font-size: medium;
+      }
+      .black {
+        background-color: black;
+        font-size: medium;
+        color: white;
+      }
+      .purple {
+        background-color: purple;
+        font-size: medium;
+      }
+      h1 {
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <h1>Mondrain painting done in CSS</h1>
+    <div class="container">
+      <div class="item red">RED</div>
+      <div class="item white1">White1</div>
+      <div class="item white2">White2</div>
+      <div class="item white3">White3</div>
+      <div class="item blue">Blue</div>
+      <div class="item white4">White4</div>
+      <div class="item purple">Purple</div>
+      <div class="item yellow">Yellow</div>
+      <div class="item black">Black</div>
+    </div>
+  </body>
+</html>
